@@ -27,9 +27,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Serviços</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,7 +38,8 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avatar.png" alt="..." />
+                <img class="masthead-avatar mb-5" id="avatar" src="assets/img/avatar.png" alt="..." />
+                <img class="masthead-avatar mb-5" id="avatar2" src="assets/img/avatar2.png" alt="..." />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Junior Gucciardo</h1>
                 <!-- Icon Divider-->
@@ -51,6 +52,27 @@
                 <p class="masthead-subheading font-weight-light mb-0">- Desenvolvedor Full Stack - Especialista em tecnologias WEB - UX Designer - </p>
             </div>
         </header>
+
+        <!-- Footer Head-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-12 mb-1 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Tecnologias</h4>
+                        <h5 class="btn btn-outline-light btn-tech mx-1" href="#!"><i class="fa-brands fa-java"></i></h5>
+                        <h5 class="btn btn-outline-light btn-tech mx-1" href="#!"><i class="fa-solid fa-database"></i></h5>
+                        <h5 class="btn btn-outline-light btn-tech mx-1" href="#!"><i class="fa-brands fa-php"></i></h5>
+                        <h5 class="btn btn-outline-light btn-tech mx-1" href="#!"><i class="fa-brands fa-html5"></i></h5>
+                        <h5 class="btn btn-outline-light btn-tech mx-1" href="#!"><i class="fa-brands fa-js"></i></h5>
+                        <h5 class="btn btn-outline-light btn-tech mx-1" href="#!"><i class="fa-brands fa-laravel"></i></h5>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+        
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
@@ -140,8 +162,9 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Mestre da programação, construo soluções poderosas para bancos de dados e desenvolvo interfaces atrativas e cativantes com o que tem de mais avançado em tecnologia FrontEnd</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">Me chamo Junior, tenho 27 anos e desde os 13 me envolvo com tecnologia. Tenho explorado diversas áreas da TI, mas encontrei minha verdadeira paixão no desenvolvimento de soluções intuitivas e bem pensadas para os usuários.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Ingressei no curso de Sistemas para Internet no IFFAR, adquirindo conhecimento em diversas áreas, desde o backend e frontend até o desenvolvimento de apps e jogos.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Estou sempre em busca de aprimoramento e novos desafios, comprometido em contribuir com soluções que agreguem valor e facilitem a vida das pessoas. Juntos, vamos seguir nessa jornada de aprendizado e crescimento constante.</p></div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
@@ -265,10 +288,12 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">Crie sua presença online de forma rápida e eficiente com nossas soluções WordPress totalmente customizadas. Do básico ao avançado, estamos aqui pra fazer sua marca brilhar na web!
+                                        Engenharia de Software Avançada: Desenvolvimento de Soluções Sob Medida:
+                                        </p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        Fechar
                                     </button>
                                 </div>
                             </div>
@@ -297,10 +322,10 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">Das ideias mais loucas aos projetos mais desafiadores, nossa equipe de experts em desenvolvimento cria soluções sob medida que vão além das expectativas. Vamos transformar seus sonhos em realidade digital!</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
+                                        Fechar
                                     </button>
                                 </div>
                             </div>
@@ -393,7 +418,8 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">Sua marca merece destaque! Com designs modernos e funcionalidades intuitivas, nossos sites e apps institucionais vão fortalecer sua presença online e conquistar novos públicos.
+                                        UpGradePress - Manutenção Especializada em Sistemas Wordpress:</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -437,14 +463,8 @@
                 </div>
             </div>
         </div>
-        <!-- Bootstrap core JS-->
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>

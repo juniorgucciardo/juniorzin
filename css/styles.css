@@ -10967,6 +10967,18 @@ html {
   color: #6c757d;
 }
 
+.hexagon {
+  width: 100px;  /* Adjust width as needed */
+  height: 100px;  /* Adjust height as needed */
+  /* background-color: #f2f2f2;  /* Adjust background color */
+  border: 1px solid #ddd;  /* Adjust border style and color */
+  }
+
+.btn-tech{
+  font-size: 4em;
+
+}
+
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;

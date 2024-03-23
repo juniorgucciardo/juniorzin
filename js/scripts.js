@@ -52,3 +52,38 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+window.addEventListener("load", alternarImagens);
+
+
+function alternarImagens() {
+    // Seleciona as duas imagens
+    const img1 = document.getElementById("avatar");
+    const img2 = document.getElementById("avatar2");
+  
+    // Define a variável que controla a imagem atual
+    let imgAtual = img1;
+  
+    // Função para alternar as imagens
+    function mostrarEsconder() {
+      // Esconde a imagem atual
+      imgAtual.style.display = "none";
+  
+      // Se a imagem atual for a primeira, mostra a segunda
+      if (imgAtual === img1) {
+        imgAtual = img2;
+      } else {
+        imgAtual = img1;
+      }
+  
+      // Mostra a nova imagem atual
+      imgAtual.style.display = "block";
+    }
+  
+    // Mostra a imagem inicial
+    img1.style.display = "block";
+    img2.style.display = "none";
+  
+    // Chama a função para alternar as imagens a cada 2 segundos
+    setInterval(mostrarEsconder, 2000);
+  }

@@ -97,8 +97,8 @@ function alternarImagens() {
       {
         breakpoint: 768, // Largura máxima da tela para aplicar a configuração
         settings: {
-          slidesToShow: 2, // Número de slides a serem exibidos
-          slidesToScroll: 1 // Número de slides a serem rolados por vez
+          slidesToShow: 3, // Número de slides a serem exibidos
+          slidesToScroll: 3 // Número de slides a serem rolados por vez
         }
       }
     ]

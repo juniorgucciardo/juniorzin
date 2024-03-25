@@ -87,3 +87,21 @@ function alternarImagens() {
     // Chama a função para alternar as imagens a cada 2 segundos
     setInterval(mostrarEsconder, 2000);
   }
+
+  $('.carousel-itens-header').slick({
+    infinite: true,
+    autoplay: true,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 768, // Largura máxima da tela para aplicar a configuração
+        settings: {
+          slidesToShow: 2, // Número de slides a serem exibidos
+          slidesToScroll: 1 // Número de slides a serem rolados por vez
+        }
+      }
+    ]
+  });
+
+  

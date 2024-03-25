@@ -11062,12 +11062,14 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
 .titulo {
   font-size: 13px;
   color: #000;
   margin-bottom: 5px;
+  color: #fff;
 }
 
 .icone {

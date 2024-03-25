@@ -57,48 +57,39 @@ window.addEventListener("load", alternarImagens);
 
 
 function alternarImagens() {
-    // Seleciona as duas imagens
-    const img1 = document.getElementById("avatar");
-    const img2 = document.getElementById("avatar2");
-  
-    // Define a variável que controla a imagem atual
-    let imgAtual = img1;
-  
-    // Função para alternar as imagens
-    function mostrarEsconder() {
-      // Esconde a imagem atual
+  const img1 = document.getElementById("avatar");
+  const img2 = document.getElementById("avatar2");
+  let imgAtual = img1;
+  img2.style.display = "none";
+
+  function toggleImagens() {
+    const proximaImg = (imgAtual === img1) ? img2 : img1;
+
+    imgAtual.classList.add('animate__animated', 'animate__flipOutY');
+    setTimeout(function() {
       imgAtual.style.display = "none";
-  
-      // Se a imagem atual for a primeira, mostra a segunda
-      if (imgAtual === img1) {
-        imgAtual = img2;
-      } else {
-        imgAtual = img1;
-      }
-  
-      // Mostra a nova imagem atual
-      imgAtual.style.display = "block";
-    }
-  
-    // Mostra a imagem inicial
-    img1.style.display = "block";
-    img2.style.display = "none";
-  
-    // Chama a função para alternar as imagens a cada 2 segundos
-    setInterval(mostrarEsconder, 2000);
+      imgAtual.classList.remove('animate__animated', 'animate__flipOutY');
+      proximaImg.style.display = "block";
+      proximaImg.classList.add('animate__animated', 'animate__flipInY');
+      imgAtual = proximaImg;
+    }, 1000);
   }
+
+  img1.addEventListener('click', toggleImagens);
+  img2.addEventListener('click', toggleImagens);
+}
 
   $('.carousel-itens-header').slick({
     infinite: true,
     autoplay: true,
     slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 768, // Largura máxima da tela para aplicar a configuração
         settings: {
           slidesToShow: 3, // Número de slides a serem exibidos
-          slidesToScroll: 3 // Número de slides a serem rolados por vez
+          slidesToScroll: 4 // Número de slides a serem rolados por vez
         }
       }
     ]

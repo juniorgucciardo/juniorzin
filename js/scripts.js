@@ -83,13 +83,13 @@ function alternarImagens() {
     infinite: true,
     autoplay: true,
     slidesToShow: 4,
-    slidesToScroll: 3,
+    slidesToScroll: 5,
     responsive: [
       {
         breakpoint: 768, // Largura máxima da tela para aplicar a configuração
         settings: {
           slidesToShow: 3, // Número de slides a serem exibidos
-          slidesToScroll: 4 // Número de slides a serem rolados por vez
+          slidesToScroll: 6 // Número de slides a serem rolados por vez
         }
       }
     ]

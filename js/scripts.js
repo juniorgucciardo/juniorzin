@@ -95,4 +95,14 @@ function alternarImagens() {
     ]
   });
 
+
+  $('.story-slider').slick({
+    slidesToShow: 1, // Show only one slide at a time
+    slidesToScroll: 1, // Scroll by one slide
+    arrows: true, // Add navigation arrows
+    dots: true, // Add pagination dots
+    autoplay: true, // Enable autoplay (optional)
+    autoplaySpeed: 5000 // Autoplay duration in milliseconds (optional)
+  });
+
   
